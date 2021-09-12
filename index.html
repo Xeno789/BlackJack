@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BlackJack</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <div class="container">
+        <div>Dealer's hand: <span id="dealerCards"></span></div>
+        <p>Dealer's cards value: <span id="dealerScore">0</span><p>
+        <div>Player's hand: <span id="playerCards"></span></div>
+        <p>Player's cards value: <span id="playerScore">0</span><p>
+        <p>Chips: <span id="chips">100</span></p>
+        <div class="Buttons">
+            <button onclick="drawCard()" id="hit-btn" class="gameButton" disabled=true>Hit</button>
+            <button onclick="stand()" id="stand-btn" class="gameButton" disabled=true>Stand</button><br>
+            <button onclick="startGame()" id="gameStart-btn">New Game</button>
+        </div>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>
